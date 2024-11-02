@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Card - Biography</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="pic1.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="card">
+        <img class="img" src="pic1.jpg" alt="Profile Picture" />
+        <h2 class="role">Agiri Mosopesoluwa </h2>
+        <em><strong>
+                <p>Dev Ops</p>
+            </strong>
+        </em>
+        <span class="box">
+            <p class="readmore">Read more:</p>
+            <em class="em"><a href="https://developer.mozilla.org/en-US/" class="link-read"
+                    target="_blank">www.mdn.com</a></em>
+        </span>
+
+        <!-- User input section -->
+        <form class="details-holder">
+            <input type="email" id="email" class="email" placeholder="Enter your email address" required />
+            <textarea class="text" id="message" placeholder="I would like to say..."></textarea>
+        </form>
+
+        <button onclick="sendEmail()">Contact me</button>
+    </div>
+
+    <!-- Toast Notification -->
+    <p id="toast" class="toast">Your message was sent successfully😁🎉</p>
+
+    <!-- Email.js and script.js -->
+    <script src="https521000//cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
